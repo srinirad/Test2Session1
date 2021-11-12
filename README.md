@@ -1,3 +1,22 @@
+0.	Write a program to Print your name
+1.	Add two numbers
+2.	Add two number using 4 functions
+	a.	Pass by value
+	b.	Pass by reference
+3.	Compare 3 numbers using 4 functions
+	a.	Pass by value	     //int cmp(int a, int b, int c) -> int input ()
+	b.	Pass by reference //void cmp(int a, int b, int c, int *large); -> void input (int *a, int *b)
+4.	Sum of n numbers
+	a.	Sum of n numbers
+	b.	Using while loop? -> square root
+5.	Sum of n different number entered by the user
+6.	Compare two strings
+7.	Sum of two complex numbers
+8.	Sum of n complex numbers
+
+
+
+
 Expressions:
 
 1. Write a program to find length distance between two points.
@@ -81,3 +100,5 @@ float comput_total_weight(int n, Camel c[n], float truck_weight);
 void ouput(float total_truck_weight);
 and 
 int main()
+
+
