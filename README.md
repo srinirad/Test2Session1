@@ -17,7 +17,7 @@ Expressions, Functions
 	output:
 	1+2+3+4+5 is 15
 	
-	b.	Using while loop? -> square root
+	//b.	Using while loop? -> square root
 	Function Prototypes:
 5.	Write a program to find Sum of n different number entered by the user
 	int input_array_size();
@@ -42,7 +42,7 @@ Expressions, Functions
 	output:
 	hello is greater than world
 	
-9.	Write a program to find Sum of two complex numbers
+8.	Write a program to find Sum of two complex numbers
 	struct _complex
 	{
 		float real,imaginary;
@@ -58,7 +58,7 @@ Expressions, Functions
 	output:
 	2 + 3i + 4 + 5i is 6 + 8i
 
-8.	Write a program to find Sum of n complex numbers
+9.	Write a program to find Sum of n complex numbers
 
 	struct _complex
 	{
