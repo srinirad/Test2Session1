@@ -1,104 +1,84 @@
 0.	Write a program to Print your name
-1.	Add two numbers
-2.	Add two number using 4 functions
+1.	Write a program to Add two numbers
+Expressions, Functions
+3.	Add two number using 4 functions
 	a.	Pass by value
 	b.	Pass by reference
-3.	Compare 3 numbers using 4 functions
+3.	Write a program to Compare 3 numbers using 4 functions
 	a.	Pass by value	     //int cmp(int a, int b, int c) -> int input ()
 	b.	Pass by reference //void cmp(int a, int b, int c, int *large); -> void input (int *a, int *b)
-4.	Sum of n numbers
-	a.	Sum of n numbers
+4.	Write a program to find Sum of n numbers
+	a.	Sum of n numbers 
+	int input_n();
+	int sum_n(int n);
+	void output(int n, int sum);
+	input: 
+	5
+	output:
+	1+2+3+4+5 is 15
+	
 	b.	Using while loop? -> square root
-5.	Sum of n different number entered by the user
-6.	Compare two strings
-7.	Sum of two complex numbers
-8.	Sum of n complex numbers
+	Function Prototypes:
+5.	Write a program to find Sum of n different number entered by the user
+	int input_array_size();
+	void input_array(int n, int a[n]);
+	int sum_n_arrays(int n, int a[n]);
+	void out_put(int n, int a[n], int sum);
+	input:
+	1 7 11
+	output:
+	1+7+11 is 19
+6. 	Write a program to find the square root of a number.
+	float input();
+	float my_sqrt(float n);
+	void output(float n, float sqrt_result);
+7.	Write a program to Compare two strings
+	void input_two_string(char *a, char *b);
+	int strcmp(char *a, char *b);
+	void output(char *a, char *b, int result);
+	input:
+	hello 
+	world
+	output:
+	hello is greater than world
+	
+9.	Write a program to find Sum of two complex numbers
+	struct _complex
+	{
+		float real,imaginary;
+	};
+	typedef _complex Complex;
+	
+	Complex input_complex(); 
+	Complex add(Complex a, Complex b);
+	void output(Complex a, Complex b, Complex c);
+	input:
+	2 3
+	4 5
+	output:
+	2 + 3i + 4 + 5i is 6 + 8i
 
+8.	Write a program to find Sum of n complex numbers
 
-
-
-Expressions:
-
-1. Write a program to find length distance between two points.
-
-Expressions and Functions:
-
-2. Write a program to find the weight of the camel given height, length and stomach radius.
-weight = pi * stomach_raduius^3 * sqrt(height * length). using four functions and following function signatures. 5 marks
-
-float input_radius();
-float input_heigth();
-float input_length();
-float find_weight(float radius, float height, float length);
-void output(float radius, float height, float length, float weight);
-and int main()
-
-Expression, Functions and Structures.
-
-3. Write a program to find the weight of the camel given height, length and stomach radius.
-weight = pi * stomach_raduius^3 * sqrt(height * length). using four functions and following function signatures. 5 marks
-struct camel {
-	float radius, height, length,weight;
-};
-typedef struct camel Camel;
-Camel input(); /* do not take weight as input from the user */
-float find_weight(Camel c); /* pass by value */
-or 
-void find_weight(Camel *c); /*passing address variable */
-void output(Camel c);
-and int main()
-
- if then else statements
-
-4. When a camel is 
-
-a) sick its stomach_radius is less than height and less than length.
-b) happy its height is less than length and less than stomach_radius.
-c) tense its length is less than height and stomach_radius.
-
-Write a program to find whether a camel is sick, happy, or tense.
-With functions and structure - 5 marks. 
-
-Loops and sequences
-
-5) Write a program to find borga^x given x.
-The formula for finding borga^x
-
-1 + x/3! + x^2/5! + x^3/7! .....
-
-stop when the next term is less 0.000001, With four functions - 5 marks.
-
-
-Array processing
-With functions - 5 marks.
-use following function prototypes.
-void input(int n, int a[n]);
-float odd_average(int n, int a[n]);
-void output(int n, int a[n]); /* print all the elements of the array and then the average */
-and main.
-
-Strings
-Write a program to find if the name of the camel is a nice name.
-Camels name is nice if it has at least 2 vowels and 2 consonants in it.
-with four functions - 5 marks. 
-
-
-Array of Structures
-
-Write program to find the weight of a truck load of n camels. 
-Take input 
-a)  truck weight and
-b)  height, radius and length of n camels
-and compute the total truck weight. ( Truck weight + weight of the camels)
-With functions - 5 marks.
-
-Call functions from earlier programs where required.
-float input_truck_weight();
-int input_no_camels();
-void input_camel_details(int n, Camel c[n]);
-float comput_total_weight(int n, Camel c[n], float truck_weight);
-void ouput(float total_truck_weight);
-and 
-int main()
+	struct _complex
+	{
+		float real,imaginary;
+	};
+	typedef _complex Complex;
+	int get_n();
+	Complex input_complex();
+	void input_n_complex(int n, Complex c[n]);
+	Complex add(Complex a, Complex b);
+	Complex add_n_complex(int n, Complex c[n]);
+	void output(int n, Complex c[n], Complex result);
+	input:
+	2
+	2 3
+	4 5
+	output:
+	2 + 3i 
+	+ 4 + 5i 
+	is 
+	6 + 8i
 
 
