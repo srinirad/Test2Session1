@@ -1,87 +1,93 @@
-
-<br> 1.	Add two numbers using 4 functions and Pass by reference
-		<br> void input(int *a, int *b);
-		<br> void add(int a, int b, int *sum);
-		<br> void output(int a, int b, int sum);
+<br> 1.	Write a program to find the area of a triangle using following function signatures.
+		<br> void input(float *base, float *heaight);
+		<br> void find_area(float base , float height, float *area);
+		<br> void output(float base, float height, float area);
 		<br> input:
 		<br> 1
 		<br> 2
 		<br> output:
-		<br> sum of 1+2 is 3
+		<br> the area of the traingle with base 1.000000 and height 2.000000 is 1.000000
 
-<br> 2.	Write a program to find largest of 3 numbers using 4 functions using Pass by value
-	<br> int input()
-	<br> int cmp(int a, int b, int c)
-	<br> void output(int a, int b, int c, int largest)
+<br> 2.	Write a program to find if a triangle is scalene. A triangle is a scalene traingle if all the
+three sides of the triangle are not equal to each other.
+
+	<br> int input_side()
+	<br> int check_scalene(int a, int b, int c)
+	<br> void output(int a, int b, int c, int isscalene)
 
 
-<br> 3.	Write a program to find Sum of n numbers
-	<br> a.	Sum of n numbers 
-	<br> int input_n();
-	<br> int sum_n(int n);
-	<br> void output(int n, int sum);
+<br> 3.	Write a program find whether a number is a composite number. A Composite number has a factor other than
+1 and itself
+	<br> int input_number();
+	<br> int is_composite(int n);
+	<br> void output(int n, int composite);
 	<br> input: 
-	<br> 5
+	<br> 8
 	<br> output:
-	<br> 1+2+3+4+5 is 15
+	<br> 8 is a composite number.
 
-<br> 4.	Write a program to find Sum of n different number entered by the user
+<br> 4.	Write a program to find Sum of composite number in an array of numbers different containing numbers entered by the user.
 	<br> int input_array_size();
 	<br> void input_array(int n, int a[n]);
-	<br> int sum_n_arrays(int n, int a[n]);
-	<br> void out_put(int n, int a[n], int sum);
+	<br> int sum_composite_numbers(int n, int a[n]);
+	<br> void out_put(int sum);
 	<br> input:
-	<br> 1 7 11
+	<br> 1 2 7 8 12
 	<br> output:
-	<br> 1+7+11 is 19
-<br> 5. Write a program to find the square root of a number.
-	<br> float input();
-	<br> float my_sqrt(float n);
-	<br> void output(float n, float sqrt_result);
+	<br> 20
+<br> 5. Write a program to find gcd (hcf) of two numbers.
+	<br> int input();
+	<br> int gcd(int a, int b);
+	<br> void output(int a, int b, int gcd);
+input:
+12 16
+output
+4
 	
-<br> 6.	Write a program to Compare two strings
-	<br> void input_two_string(char *a, char *b);
-	<br> int strcmp(char *a, char *b);
-	<br> void output(char *a, char *b, int result);
+<br> 6.	Write a program to reverse a string.
+	<br> void input_string(char *a);
+	<br> int str_reverse(char *a);
+	<br> void output(char *a,char *reversea);
 	<br> input:
 	<br> hello 
-	<br> world
 	<br> output:
-	<br> world is greater than hello
+	<br> olleh
 	
-<br> 7. Write a program to find Sum of two complex numbers
-<br> 	struct _complex
+<br> 7. Write a program to find the area of a triangle
+	<br> struct _triangle
 	<br> {
-	<br> 	float real,imaginary;
+	<br> 	float base,altitude,area;
 	<br> };
-	<brtypedef _complex Complex
-	<br> Complex input_complex(); 
-	<br> Complex add(Complex a, Complex b);
-	<br> void output(Complex a, Complex b, Complex c);
+	<brtypedef _triangle Triangle
+	<br> Triangle input_triangle(); 
+	<br> void find_area(Traingle *t);
+	<br> void output(Triangle t);
 	<br> input:
 	<br> 2 3
-	<br> 4 5
-	<br> output
-	<br> 2 + 3i + 4 + 5i is 6 + 8i 
-<br> 
-<br> 8. Write a program to find Sum of n complex numbers
-	<br> struct _complex
+	<br> output:
+	<br> The area of triangle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
+
+<br> 8. Write a program to find the triangle with smallest area in n given triangles.
+	<br> struct _triangle
 	<br> {
-		<br> float real,imaginary;
+	<br> 	float base,altitude,area;
 	<br> };
-	<br> typedef _complex Complex;
-	<br> int get_n();
-	<br> Complex input_complex();
-	<br> void input_n_complex(int n, Complex c[n]);
-	<br> Complex add(Complex a, Complex b);
-	<br> Complex add_n_complex(int n, Complex c[n]);
-	<br> void output(int n, Complex c[n], Complex result);
-<br> 	input:
-	<br> 2
-	<br> 2 + 3i 
-	<br> 4 + 5i
-<br>	output:
-	<br> 2 + 3i 
-	<br> + 4 + 5i is 
-	<br> 6 + 8i
+	<br> typedef _triangle Triangle
+	<br> int input_n();
+	<br> Triangle input_triangle(); 
+	<br> void input_n_triangles(int n, triangle t[n]);
+	<br> void find_area(Triangle *t);
+	<br> void find_areas_n(int n, Triangle t[n]);
+	<br> Triangle find_smallest_triangle(int n, Triangle t[n]);  
+	<br> void output(int n, Triangle t[n), Triangle smallest);
+	<br> void 
+	<br> input:
+	<br> 2 3
+	<br> 4 6
+	<br> the smallest of triangles with base and height
+	<br> 2,3 and
+        <br> 4,6
+	<br> is
+        <br> triangle with base 2.000000, 3.000000 is 3.000000
+	<br> The area of traingle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
 	
