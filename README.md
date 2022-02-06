@@ -1,5 +1,5 @@
 <br> 1.	Write a program to find the area of a triangle using following function signatures.
-		<br> void input(float *base, float *heaight);
+		<br> void input(float *base, float *height);
 		<br> void find_area(float base , float height, float *area);
 		<br> void output(float base, float height, float area);
 		<br> input:
@@ -79,7 +79,7 @@ output
 	<br> void find_area(Triangle *t);
 	<br> void find_areas_n(int n, Triangle t[n]);
 	<br> Triangle find_smallest_triangle(int n, Triangle t[n]);  
-	<br> void output(int n, Triangle t[n), Triangle smallest);
+	<br> void output(int n, Triangle t[n], Triangle smallest);
 	<br> void 
 	<br> input:
 	<br> 2 3
@@ -89,5 +89,5 @@ output
         <br> 4,6
 	<br> is
         <br> triangle with base 2.000000, 3.000000 is 3.000000
-	<br> The area of traingle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
+	<br> The area of triangle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
 	
