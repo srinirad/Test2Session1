@@ -46,7 +46,7 @@ output
 	
 <br> 6.	Write a program to reverse a string.
 	<br> void input_string(char *a);
-	<br> int str_reverse(char *a);
+	<br> char *str_reverse(char *a);
 	<br> void output(char *a,char *reversea);
 	<br> input:
 	<br> hello 
