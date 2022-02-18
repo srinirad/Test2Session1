@@ -1,71 +1,74 @@
-<br> 1.	Write a program to find the area of a triangle using following function signatures.
-		<br> void input(float *base, float *height);
-		<br> void find_area(float base , float height, float *area);
-		<br> void output(float base, float height, float area);
+<br> 1.	Write a program to find the distance between two points
+		<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
+		<br> void find_distance(float x1, float y1, float x2, float y2, float *area);
+		<br> void output(float x1, float y1,float x2, float y2, float area);
 		<br> input:
-		<br> 1
-		<br> 2
+		<br> 1 1 2 2
 		<br> output:
-		<br> the area of the traingle with base 1.000000 and height 2.000000 is 1.000000
+		<br> the distance between point (1.000000,1.000000) and (2.000000,2.000000) is  with 1.4142
 
-<br> 2.	Write a program to find if a triangle is scalene. A triangle is a scalene traingle if all the
-three sides of the triangle are not equal to each other.
-
-	<br> int input_side()
-	<br> int check_scalene(int a, int b, int c)
-	<br> void output(int a, int b, int c, int isscalene)
+<br> 2.	Write a program to whether the three lines form a triangle.
+	<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
+	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
+	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3)
 
 
-<br> 3.	Write a program find whether a number is a composite number. A Composite number has a factor other than
-1 and itself
+<br> 3.	Write a program find whether a given number is a prime number. 
 	<br> int input_number();
-	<br> int is_composite(int n);
-	<br> void output(int n, int composite);
+	<br> int is_prime(int n);
+	<br> void output(int n, int is_prime);
 	<br> input: 
-	<br> 8
+	<br> 3
 	<br> output:
-	<br> 8 is a composite number.
+	<br> 3 is a prime number.
 
-<br> 4.	Write a program to find Sum of composite number in an array of numbers different containing numbers entered by the user.
-	<br> int input_array_size();
-	<br> void input_array(int n, int a[n]);
-	<br> int sum_composite_numbers(int n, int a[n]);
-	<br> void out_put(int sum);
-	<br> input:
-	<br> 1 2 7 8 12
-	<br> output:
-	<br> 20
-<br> 5. Write a program to find gcd (hcf) of two numbers.
+<br> 4.	Write a program to find nth number in fibonacci sequence.
+        <br> Fibonacci sequence consists of 0,1,1,2,3,5,8,13,21........
 	<br> int input();
-	<br> int gcd(int a, int b);
-	<br> void output(int a, int b, int gcd);
-input:
-12 16
-output
-4
+	<br> int find_fibo(int n);
+	<br> void output(int n, int fibo);
+
+<br> 5. Write a program to find all the prime numbers between erotosthenes sieve method.
+	<br> int input_array_size();
+	<br> void init_array(int n, int a[n];
+	<br> void erotosthenes_sieve(int n, int a[n]);
+	<br> void out_put(int n, int a[n]);
+	<br> input:
+	<br> 100
+	<br> output:
+	<br> 2,3,7,11,13,19,23,29,31,...
+
 	
-<br> 6.	Write a program to reverse a string.
+<br> 6.	Write a program to find the index of a substring of a string.
 	<br> void input_string(char *a);
-	<br> char *str_reverse(char *a);
-	<br> void output(char *a,char *reversea);
+	<br> int str_reverse(char *string, char *substring);
+	<br> void output(char *string, char *substrint, int index);
 	<br> input:
-	<br> hello 
+	<br> helloworldhello
+	<br> world
 	<br> output:
-	<br> olleh
+	<br> The index of world in helloworldhello is 5
 	
-<br> 7. Write a program to find the area of a triangle
-	<br> struct _triangle
-	<br> {
-	<br> 	float base,altitude,area;
+<br> 7. Write a program to find the length of a line.
+        <br> struct _point {
+	<br>	float x,y;
 	<br> };
-	<brtypedef _triangle Triangle
-	<br> Triangle input_triangle(); 
-	<br> void find_area(Traingle *t);
-	<br> void output(Triangle t);
+        <br> typedef struct _point Point;
+	<br> struct _line
+	<br> {
+	<br>	Point p1,p2;
+	<br>	float distance;
+	<br> };
+	<br> typedef struct _line Line
+	<br> Point input_point();	
+	<br> Line input_line(); 
+	<br> void find_length(Line \*l);
+	<br> void output(Line l);
 	<br> input:
-	<br> 2 3
+	<br> 0 0 
+	<br> 1 1
 	<br> output:
-	<br> The area of triangle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
+	<br> The a
 
 <br> 8. Write a program to find the triangle with smallest area in n given triangles.
 	<br> struct _triangle
