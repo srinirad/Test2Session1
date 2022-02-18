@@ -10,7 +10,7 @@
 <br> 2.	Write a program to whether the three lines form a triangle.
 	<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
 	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
-	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3)
+	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
 
 
 <br> 3.	Write a program find whether a given number is a prime number. 
@@ -41,8 +41,8 @@
 	
 <br> 6.	Write a program to find the index of a substring of a string.
 	<br> void input_string(char *a);
-	<br> int str_reverse(char *string, char *substring);
-	<br> void output(char *string, char *substrint, int index);
+	<br> int str_reverse(char \*string, char \*substring);
+	<br> void output(char \*string, char \*substring, int index);
 	<br> input:
 	<br> helloworldhello
 	<br> world
@@ -70,27 +70,26 @@
 	<br> output:
 	<br> The a
 
-<br> 8. Write a program to find the triangle with smallest area in n given triangles.
-	<br> struct _triangle
-	<br> {
-	<br> 	float base,altitude,area;
+<br> 8. Write a program to find the permeter of a polygon
+	<br> struct _point {
+	<br>	float x,y;
 	<br> };
-	<br> typedef _triangle Triangle
+        <br> typedef struct _point Point;
+	<br> struct _line
+	<br> {
+	<br>	Point p1,p2;
+	<br>	float distance;
+	<br> };
+	<br> struct _line Line;
+	<br> struct _polygon {
+        <br>   int n;
+	<br>   Line l[100];
+	<br>   float perimenter;
+	<br> }
 	<br> int input_n();
-	<br> Triangle input_triangle(); 
-	<br> void input_n_triangles(int n, triangle t[n]);
-	<br> void find_area(Triangle *t);
-	<br> void find_areas_n(int n, Triangle t[n]);
-	<br> Triangle find_smallest_triangle(int n, Triangle t[n]);  
-	<br> void output(int n, Triangle t[n], Triangle smallest);
-	<br> void 
-	<br> input:
-	<br> 2 3
-	<br> 4 6
-	<br> the smallest of triangles with base and height
-	<br> 2,3 and
-        <br> 4,6
-	<br> is
-        <br> triangle with base 2.000000, 3.000000 is 3.000000
-	<br> The area of triangle wwith base = 2.000000 and altitude = 3.000000 is 3.000000
-	
+	<br> int input_polygon( int n, Polygon \*p);
+	<br> Line input_line();
+	<br> void input_n_lines(int n, Line l[n]);
+	<br> void find_perimeter(Polygon \*p);
+	<br> void output(Polygon p);
+	<br>
