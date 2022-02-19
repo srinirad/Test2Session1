@@ -7,8 +7,8 @@
 		<br> output:
 		<br> the distance between point (1.000000,1.000000) and (2.000000,2.000000) is  with 1.4142
 
-<br> 2.	Write a program to whether the three lines form a triangle.
-	<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
+<br> 2.	Write a program to find whether the three lines form a triangle.
+	<br> void input_line(float \*x1, float \*y1);
 	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
 	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
 
@@ -64,12 +64,7 @@
 	<br> Line input_line(); 
 	<br> void find_length(Line \*l);
 	<br> void output(Line l);
-	<br> input:
-	<br> 0 0 
-	<br> 1 1
-	<br> output:
-	<br> The a
-
+	
 <br> 8. Write a program to find the permeter of a polygon
 	<br> struct _point {
 	<br>	float x,y;
@@ -92,4 +87,4 @@
 	<br> void input_n_lines(int n, Line l[n]);
 	<br> void find_perimeter(Polygon \*p);
 	<br> void output(Polygon p);
-	<br>
+
