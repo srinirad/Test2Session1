@@ -7,8 +7,8 @@
 		<br> output:
 		<br> the distance between point (1.000000,1.000000) and (2.000000,2.000000) is  with 1.4142
 
-<br> 2.	Write a program to find whether the three lines form a triangle.
-	<br> void input_line(float \*x1, float \*y1);
+<br> 2.	Write a program to find whether the three points form a triangle.
+	<br> void input_triangle(float \*x1, float \*y1, float \*x2, float \*y2, float \*x3, float \*y3);
 	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
 	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
 
